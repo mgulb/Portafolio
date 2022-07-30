@@ -1,0 +1,23 @@
+{
+  "name": "front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "javascript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mgulb/Portafolio.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "gimena",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mgulb/Portafolio/issues"
+  },
+  "homepage": "https://github.com/mgulb/Portafolio#readme",
+  "dependencies": {}
+}
