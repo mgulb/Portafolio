@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,23 +7,179 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     
     <link rel="stylesheet" type="text/css" href="estilos.css" media="screen" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7cff3027b6.js" crossorigin="anonymous"></script>
   </head>
   
-    <body class="text-center ">
+    <body class="m-0 p-0">
+     <div class=" cover-container fondovirgen m-0 p-0 ">
+      <div class="container">
+        <header class="">
 
-      
-      
-      <div class=" cover-container fondo-img bg-darck ">
-      <div class="container d-flex  p-3  flex-column  ">
-    <header class="mb-auto">
-        <nav class="nav nav-pills  flex-column flex-sm-row fondo">
-          <a class="flex-sm-fill text-sm-center nav-link link-light " aria-current="page" href="index.html">Home</a>
-          <a class="flex-sm-fill text-sm-center nav-link link-light" href="#">Recorrido Academico</a>
-          <a class="flex-sm-fill text-sm-center nav-link link-light" href="conoceMas.html">Conoce mas...</a>
-          <button type="button" class="flex-xs-fill text-sm-center btn boton">Loguin</button>
-        </nav>
-      </div>
+      <nav id="" class="navbar  navbar-expand-md ">
+          <a class="navbar-brand  color " href="index.html">Maria Gimena Ugozzoli</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" id="aria" onclick="aria();" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
+
+        <ul class=" nav ">
+            <li class="nav-item ">
+              <a class=" drop-item fuentemenu mx-2" href="#scrollspyHeading1" onclick="{Aparecer('recorrido')}">Recorrido Academico</a>
+            </li>
+            <script>
+             
+             function Aparecer(a){
+              switch(a){
+                case "recorrido":document.getElementById('recorrido').style.display="block";
+                                 document.getElementById('laboral').style.display="none";
+                                 document.getElementById('personal').style.display="none";
+                                 document.getElementById('actitud').style.display="none";
+                                 document.getElementById('hobbies').style.display="none";
+                                 break;
+
+                case "laboral":  document.getElementById('recorrido').style.display="none";
+                                 document.getElementById('laboral').style.display="block";
+                                 document.getElementById('personal').style.display="none";
+                                 document.getElementById('actitud').style.display="none";
+                                 document.getElementById('hobbies').style.display="none";
+                                 break;
+                case "personal": document.getElementById('recorrido').style.display="none";
+                                 document.getElementById('laboral').style.display="none";
+                                 document.getElementById('personal').style.display="block";
+                                 document.getElementById('actitud').style.display="none";
+                                 document.getElementById('hobbies').style.display="none";
+                                 break;
+                case "actitud":  document.getElementById('recorrido').style.display="block";
+                                 document.getElementById('laboral').style.display="none";
+                                 document.getElementById('personal').style.display="none";
+                                 document.getElementById('actitud').style.display="block";
+                                 document.getElementById('hobbies').style.display="none";
+                                 break;
+                case "hobbies":  document.getElementById('recorrido').style.display="none";
+                                 document.getElementById('laboral').style.display="none";
+                                 document.getElementById('personal').style.display="none";
+                                 document.getElementById('actitud').style.display="none";
+                                 document.getElementById('hobbies').style.display="block";
+                                 break;
+                case "masdemi":   document.getElementById('recorrido').style.display="none";
+                                 document.getElementById('laboral').style.display="none";
+                                 document.getElementById('personal').style.display="none";
+                                 document.getElementById('actitud').style.display="none";
+                                 document.getElementById('hobbies').style.display="none";                                                                          
+             
+                                }
+                
+              }
+            </script>
+            <li class="nav-item">
+              <a class="drop-item fuentemenu mx-2 " href="#scrollspyHeading2" onclick="{Aparecer('laboral');}">Laboral</a>
+            </li>
+            <li class="nav-item dropdown ">
+              <a class=" drop-item fuentemenu mx-2 dropdown-toggle" data-bs-toggle="dropdown" href="#S" role="button" onclick="Aparecer('masdemi')" aria-expanded="false"> Mas de mi...</a>
+              <ul class="dropdown-menu fondo-suave border-0 ">
+                <li><a class=" drop-item mx-4 " href="#scrollspyHeading3" onclick="Aparecer('personal')">Personal</a></li>
+                <li><a class="drop-item mx-4 " href="#scrollspyHeading4" onclick="Aparecer('hobbies')">Hobbies</a></li>
+                <li><hr class="dropdown-divider border-0"></li>
+                <li><a class=" drop-item mx-4" href="#scrollspyHeading5" onclick="Aparecer('actitud')">Actitud</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="btn btn-outline-warning ms-5" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Loguin</a>
+              <div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered modal-sm ">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Inicio de Sesion</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email address</label>
+                          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                          <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Password</label>
+                          <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-outline-warning">Submit</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="btn btn-outline-warning" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Registrarme</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered ">
+                  <div class="modal-content bg-dark">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Registrarme</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="row gy-2 gx-3 align-items-center">
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingInput">name</label>
+                          <input type="text" class="form-control" id="autoSizingInput" placeholder="Empresa Solicitante">
+                        </div>
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                          <div class="input-group">
+                            <div class="input-group-text">Mail</div>
+                            <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="usuario">
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="contrasena">
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <label class="visually-hidden" for="autoSizingSelect">Motivo Registro</label>
+                          <select class="form-select" id="autoSizingSelect">
+                            <option selected>Motivo  de registro</option>
+                            <option value="1">Interes</option>
+                            <option value="2">Prouesta</option>
+                            <option value="3">Futura Oferta L.</option>
+                          </select>
+                        </div>
+                        <div class="col-auto">
+                          <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                              Remember me
+                            </label>
+                          </div>
+                        </div>
+                        <div class="col-auto">
+                          <button type="submit" class="btn btn-outline-warning">Submit</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                     
+                      <a class="btn btn-outline-warning ms-5" href="conoceMas.html" >Guardar</a>
+                    </div>
+                  </div>
+                </div>
+              
+              
+            </li>
+          
+          </ul> 
+        </div>
+      </nav>
+
     </header>
+
+
   
     <main role="main" class=" ">
       
@@ -101,69 +257,50 @@
             </g>
         </svg>
         </div>
-      
-      <div class="hero__content">
         
-      
-    
-    
-  <h1 class="cover-heading mt-5">Recorrido Academico.</h1>
-  <div class="container mt-5 mb-5">
-    <div class="row">
-      <div class="col-md-6 offset-md-3">
-        
-        <ul class="timeline ">
-          <li>
-            <a target="_blank" href="">Primario</a>
-            <a href="#" class="float-right">21 March, 2014</a>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non nisi semper, et elementum lorem ornare. Maecenas placerat facilisis mollis. Duis sagittis ligula in sodales vehicula....</p>
-          </li>
-          <li>
-            
-            <a href="#">Secundario</a>
-            <a href="#" class="float-right">4 March, 2014</a>
-            <p>Curabitur purus sem, malesuada eu luctus eget, suscipit sed turpis. Nam pellentesque felis vitae justo accumsan, sed semper nisi sollicitudin...</p>
-          </li>
-          <li>
-            <a href="#">Universidad</a>
-            <a href="#" class="float-right">1 April, 2014</a>
-            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-          </li>
-          <li>
-            <a href="#">Capacitacion</a>
-            <a href="#" class="float-right">1 April, 2014</a>
-            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-          </li>
-          <li>
-            <a href="#">Actualizacion</a>
-            <a href="#" class="float-right">1 April, 2014</a>
-            <p>Fusce ullamcorper ligula sit amet quam accumsan aliquet. Sed nulla odio, tincidunt vitae nunc vitae, mollis pharetra velit. Sed nec tempor nibh...</p>
-          </li>
-
-        </ul>
+     <div class="row m-5">
+     
+     <div class="col-6"> </div>
+      <div class="col-6 frente">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example " tabindex="0">
+         <div style="display:block" id="recorrido">
+          <h4 id="scrollspyHeading1">Recorrido Academico</h4>
+          <p>fhjksdhsdfjkhsdfjkhdfjkh</p>
+         </div>
+        <div style="display:block" id="laboral">
+          <h4 id="scrollspyHeading2">Laboral</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed neque praesentium, maiores porro eius laborum temporibus deleniti minima nemo. Molestias consequatur ad error aspernatur? Corporis vel in pariatur ad beatae?</p>
+        </div>
+        <div style="display:block" id="personal">
+          <h4 id="scrollspyHeading3">Personal</h4>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe aspernatur eius debitis, quo, fuga deleniti voluptatibus accusantium quam quidem dignissimos sequi! Officia ea itaque corrupti minima reiciendis tempora eum obcaecati.</p>
+        </div>
+        <div style="display:block" id="hobbies">
+          <h4 id="scrollspyHeading4">Hobbies</h4>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis quisquam sapiente enim voluptas, ipsam sequi cupiditate numquam assumenda rerum provident in itaque, aspernatur velit commodi magnam consequatur, repellat culpa delectus?</p>
+        </div>
+        <div style="display:block" id="actitud" >
+          <h4 id="scrollspyHeading5">Actitud</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iusto minima voluptatibus quis facere dolorum, repudiandae iste sunt eaque incidunt nisi velit fuga distinctio, aliquam id harum cumque earum quas!</p>
+          </div>
+        </div>
+        </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-</div>
- 
-  <div class="punto">
-    
-  
-  </div>
-
-      
-    </main>
-      </div>
-    <footer class="mastfoot mt-auto">
-      <div class="inner">
-        <p>Cover template for <a href="https://getbootstrap.com/">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+    <footer class="mastfoot mt-auto ">
+      <div class="inner d-flex justify-content-center fondo">
+        <h1><i class="fa fa-facebook m-1 "></i> <i class="fa fa-instagram m-1 "></i><i class="fa fa-whatsapp m-1"></i><i class="fa fa-github m-1"></i><i class="fa fa-gitlab"></i></h1>
       </div>
     </footer>
+    </div>
   </div>
-   
+  
+  
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
-  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
   </body>
 </html>

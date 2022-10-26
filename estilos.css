@@ -1,24 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Corben:700');
-
+/*font-family: 'Dancing Script', cursive;
+font-family: 'Libre Baskerville', serif;*/
+body{
+	box-sizing: border-box;
+}
 h1 {
 	
 	font-size: 1rem;
-	color: white;
+	color:#ffc107;
 	letter-spacing: 0.1rem;
-	text-shadow: 0px 3px 3px rgba(219, 6, 130, 0.66);
+	text-shadow: 0px 1px 1px gray;
+	font-family: 'Dancing Script', cursive;
+}
+.color{
+	color:#ffc107; 
+	font-family: 'Dancing Script', cursive;
+	font-size:xx-large ;
+}
+.color:hover{
+	color:lightcyan;
 }
 
+	.nav-link{
+		color:rgb(247, 220, 111);
+		font-family: 'Dancing Script', cursive;
+		font-size: x-large;
+	}
+	.nav-item{
+		color:rgb(247, 220, 111);
+		font-family: 'Dancing Script', cursive;
+		font-size: x-large;
+			}	
+	h4{
+		color:rgb(247, 220, 111);
+		font-family: 'Dancing Script', cursive;
+		font-size: x-large;
+	}
+	.fuentemenu{
+		color:rgb(247, 220, 111);
+		font-family: 'Dancing Script', cursive;
+		font-size: 1rem;	
+	}
+	p{
+		font-family: 'Libre Baskerville', serif;
+		color:lightcyan;
+		font-size:x-small;
+	}
+    .fuente{
+		font-family: 'Libre Baskerville', serif;
+		color:lightcyan;
+	}
+  
+/*burbujas*/
 .hero {
 
 	min-height: 100vh;
 	min-height: 30rem;
 	position: relative;
 	overflow: hidden;
-	display: flex;
-	justify-content: center;
-	align-content: center;
-	
-	
 }
 
 .snow {
@@ -55,30 +94,56 @@ h1 {
 		transform: translateY(0);
 	}
 	
+	
+	
 }
-
+.frente{
+	position: relative;
+}
+/*fondo*/
 .fondo{
   background: transparent;
-  
-}
-.fondo-img{
-  background: url("perfilblancoynegro.jpg ") fixed center center no-repeat;
-  min-height: 600px;
-  background-size: cover;
-}
-  @media (max-width: 768px) {
-.fondo-img{
-background: url("perfilblancoynegrochico.png") fixed center center no-repeat;
-  min-height: 600px;
+  }
+ .fondo-suave {
+	background: transparent;
+ }
+
+.fondo-img1{
+  background: url("fondoindexxl.jpg") center center no-repeat;
+  min-height: 800px;
   background-size: cover;
 }
 
+ @media (max-width: 768px) {
+.fondo-img1{
+background: url("fondoindexxs.jpg") fixed center center no-repeat;
+background-size: cover;
+min-height: 500px;
 }
+.margen{
+	margin-top: 200px;
+}
+}
+.fondovirgen{
+	
+	background: url("fondovirgen.jpg") center center no-repeat;
+    background-size:cover;
+	max-height: 100%;
+	}
+	@media (max-width: 768px) {
+		.fondovirgen{
+		background: url("fondovirgenxs1.jpg")fixed center center no-repeat;
+		background-size: cover;
+		min-height: 300px;
+		}
+		
+		}
 
 .t{
   margin-top: 150px;
 
 }
+
 .boton{
   background-color: darkmagenta ;
   opacity: 60%;
@@ -89,7 +154,7 @@ background: url("perfilblancoynegrochico.png") fixed center center no-repeat;
 .punto {
 width: 10px;
 height: 10px;
-background-color: darkmagenta ;
+background-color: turquoise ;
   opacity: 30%;
   color: azure;
 transition: width 2s;
@@ -99,4 +164,38 @@ transition: width 2s;
 width: 300px;
 height:300px;
 }
+body{
+    margin-top:20px;
+    color: #bcd0f7;
+}
+/*.navbar{
+	position:fixed;
+	z-index:1000;
+	top:0;
+	
+}*/
+.drop-item{
+	border:0mm;
+	border-style: none;
+    background: transparent;
+	color:lightcyan;
+	border-color: transparent;
+    text-decoration: none;
+}
+
+.drop-item:active{
+	border-style: none;
+	border: 0mm;
+	background: transparent;
+	color:lightcyan;
+	border-color: transparent;
+	}
+	.drop-item:hover{
+		border-style: none;
+		border: 0mm;
+		background: transparent;
+		color:lightcyan;
+		border-color: transparent;
+		}
+	
 
